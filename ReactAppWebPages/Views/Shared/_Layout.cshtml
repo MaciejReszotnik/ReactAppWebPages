@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="first.css" />
+    <link rel="stylesheet" type="text/css" href="second.css" />
+    <script src="third.js"></script>
+    <script src="fourth.js"></script>
+    <style>
+        #mainDiv {
+            padding: 20px;
+            border: solid medium black;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product information</h1>
+    <p>Request Time: @DateTime.Now.ToString("HH:mm:ss")</p>
+    <div id="mainDiv">
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -25,8 +25,8 @@ namespace ReactAppWebPages
             {
                 app.UseDeveloperExceptionPage();
             }
-
-
+            app.UseBrowserLink();
+            app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
     }

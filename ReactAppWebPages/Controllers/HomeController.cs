@@ -9,16 +9,10 @@ namespace ReactAppWebPages.Controllers
 {
     public class HomeController : Controller
     {
-        public ViewResult Index()
+        public IActionResult Index()
         {
-            var product = new Product {
-                ProductID = 1111,
-                Name = "Kayak",
-                Description = "A boat for one person",
-                Price = 275M
-            };
 
-            return View(product);
+            return View(SimpleRepository.SharedRepository.Products.Where(prod => prod.Price < 50));
         }
     }
 }
