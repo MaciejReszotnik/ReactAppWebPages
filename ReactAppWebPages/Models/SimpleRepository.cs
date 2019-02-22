@@ -16,7 +16,7 @@ namespace ReactAppWebPages.Models
             var initialItems = new[]
             {
                 new Product {Name = "Kayak", Price=275M},
-                new Product {Name = "Lidejacket", Price = 48.85M},
+                new Product {Name = "Lifejacket", Price = 48.85M},
                 new Product {Name = "Soccer ball", Price=19.50M},
                 new Product {Name = "Corner flag", Price = 34.95M}
             };
